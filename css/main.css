@@ -1,3 +1,14 @@
+@import url(./sass/utils/_variables.scss);
+@import url(./sass/components/_btn.scss);
+@import url(./sass/components/_common.scss);
+@import url(./sass/components/_contacts.scss);
+@import url(./sass/components/_decides.scss);
+@import url(./sass/components/_description.scss);
+@import url(./sass/components/_icons.scss);
+@import url(./sass/components/_links.scss);
+@import url(./sass/components/_logo.scss);
+@import url(./sass/components/_modal.scss);
+@import url(./sass/components/_team-activity.scss);
 body, footer {
   font-family: 'Roboto', 'Noto Sans', sans-serif;
   font-weight: 400;
@@ -94,7 +105,6 @@ a {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* icons*/
 .studio-list-tumb {
   width: 100%;
   height: 120px;

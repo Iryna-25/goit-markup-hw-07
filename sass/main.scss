@@ -1,3 +1,16 @@
+@import url(./sass/utils/_variables.scss);
+@import url(./sass/components/_btn.scss);
+@import url(./sass/components/_common.scss);
+@import url(./sass/components/_contacts.scss);
+@import url(./sass/components/_decides.scss);
+@import url(./sass/components/_description.scss);
+@import url(./sass/components/_icons.scss);
+@import url(./sass/components/_links.scss);
+@import url(./sass/components/_logo.scss);
+@import url(./sass/components/_modal.scss);
+@import url(./sass/components/_team-activity.scss);
+
+
 $main-text-color: #757575;
 $main-title-color: #212121;
 $contacts-footer-color: rgba(124, 110, 110, 0.6);
@@ -120,7 +133,6 @@ a {
     }
 } 
 
-/* icons*/
 .studio-list {
     &-tumb {
         width: 100%;
@@ -365,6 +377,7 @@ a {
     }
 }
 
+
 .links-header {
     display: flex;
     align-content: center;
@@ -382,6 +395,7 @@ a {
         margin-right: 50px;
     }
 }
+
 
 .contacts { 
     &-header {
@@ -466,6 +480,7 @@ a {
     line-height: 1.71;
     margin-top: 20px;
 }
+
 
 .decides-order {
     text-align: center; 
@@ -561,6 +576,7 @@ a {
 img {
     display: block;
 }
+
 
 .our-activity {
     font-size: 36px;
@@ -676,6 +692,7 @@ img {
     padding-top: 27px;
     padding-bottom: 27px;
 }
+
 
 .portfolio-buttons {
     display: flex;

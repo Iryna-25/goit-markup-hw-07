@@ -1,0 +1,193 @@
+.icon {
+    &-vector {
+        position: relative;
+        display: inline-block;
+        fill: $studio-logo-color;
+        align-items: center;
+        cursor: pointer;
+        text-align: center;
+        transition:  fill $time $timing-function;
+    }
+    &-send {
+        fill: $main-text-white-color;
+        margin-left: 10px;
+    }
+    &-header {
+    fill: currentColor;
+    margin-right: 10px;
+    cursor: pointer;
+        &:hover, &:focus {
+            fill: $hover-focus-color;  
+        }
+    }
+
+    &-social {
+        display: block;
+        display: flex;
+        align-content: center;
+        text-align: center;
+        
+        &-ul {
+            display: flex;
+            align-content: center;
+            
+            &-add { 
+                margin: 20px 0px 0px 0px;
+                display: flex;
+                align-content: center;
+            }
+        }
+
+        &-li:not(:last-child), &-li-add:not(:last-child) {
+            margin-right: 10px;
+        }
+        &-add {
+            display: block;
+            display: flex;
+            align-content: center;
+            text-align: center;
+        }
+        &-link {
+            text-align: center;
+            display: flex;
+            align-content: center;
+
+            width: 44px;
+            height: 44px;
+            border-radius: 50px; 
+            justify-content: center;
+            align-items: center;
+            fill: $border-color-clients;
+            cursor: pointer;
+            transition:  fill $time $timing-function, background $time $timing-function;
+           
+            &:hover, &:focus { 
+                fill: $main-text-white-color;
+                background: $hover-focus-color;
+                transition:  fill $time $timing-function, background $time $timing-function;
+            }
+            &-add {
+                display: flex;
+                align-content: center;
+                width: 44px;
+                height: 44px;
+                border-radius: 50px; 
+                justify-content: center;
+                align-items: center;
+                fill: $main-text-white-color;
+                cursor: pointer;
+                background: $bg-color-add;
+                transition:  fill $time $timing-function, $time $timing-function;
+                text-align: center;
+
+                &:hover, &:focus { 
+                    fill: $main-text-white-color;
+                    background: $hover-focus-color;
+                
+                    transition:  fill $time $timing-function, background $time $timing-function;
+                }
+            }
+        }
+    }
+
+    &-clients {
+        display: block;
+        fill: currentColor;
+        align-items: center;
+        
+        cursor: pointer;
+        text-align: center;
+    }
+    &-check {
+        display: inline-block;
+        width: 16px;
+        height: 15px;
+        background-color: $main-text-white-color;
+        border: 2px solid $main-title-color;
+        border-radius: 4px; 
+    }
+
+    &-person, &-phone, &-email {
+        position: absolute;
+        cursor: pointer;
+        left: 12px;
+        top: 15px;
+        transform: translateY(60%);
+        transition: transform $time $timing-function;
+    }
+
+    &-person:focus, &-phone:focus, &-email:focus,
+    &-person:hover, &-phone:hover, &-email:hover {
+        position: absolute;
+        cursor: pointer;
+        fill: $hover-focus-color;
+        transition: transform $time $timing-function;
+    }
+
+    &-vector-2 {
+        fill: $main-text-white-color;
+        transform: translateY(70%);
+        margin-left: -16px;
+        margin-right: 8.38px;
+        margin-bottom: 9px;
+        width: 16px;
+        height: 15px;
+        border: 2px solid $studio-logo-color;
+        transition: transform $time $timing-function;
+    }
+}
+
+.section-our-clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.our-clients {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: $main-title-color; 
+    text-align: center;
+    &:hover, &:focus {
+        fill: $hover-focus-color;
+        background: $main-text-white-color;
+    }
+
+    &-a {
+        width: 170px;
+        height: 92px;
+
+        border-radius: 4px;
+
+        justify-content: center;
+        align-items: center;
+        color: inherit;
+        cursor: pointer;
+
+        display: flex;
+        align-content: center;
+        
+        border: 1px solid $border-color-clients;  
+
+        transition:  color $time $timing-function, border-color $time $timing-function;
+        &:focus, &:hover {
+            color: $hover-focus-color;
+            border-color: $hover-focus-color;   
+        
+            transition:  color $time $timing-function, border-color $time $timing-function;
+        }   
+    }
+
+    &-icons {
+        display: flex;
+        align-content: center;
+        &-li {
+            color: $border-color-clients;
+            &:not(:last-child) {
+                margin-right: 30px;
+            }
+        }
+        
+    }
+}
