@@ -1,4 +1,4 @@
-@import url(./sass/utils/_variables.scss);
+/*@import url(./sass/utils/_variables.scss);
 @import url(./sass/components/_btn.scss);
 @import url(./sass/components/_common.scss);
 @import url(./sass/components/_contacts.scss);
@@ -8,12 +8,12 @@
 @import url(./sass/components/_links.scss);
 @import url(./sass/components/_logo.scss);
 @import url(./sass/components/_modal.scss);
-@import url(./sass/components/_team-activity.scss);
+@import url(./sass/components/_team-activity.scss);*/
 
 
 $main-text-color: #757575;
 $main-title-color: #212121;
-$contacts-footer-color: rgba(124, 110, 110, 0.6);
+$contacts-footer-color: rgb(255, 255, 255, 0.6);
 $footer-bg-color: #2F303A;
 $bg-color: #ECECEC;
 $background-buttons-color: #F5F4FA;
@@ -376,7 +376,6 @@ a {
         align-content: center;
     }
 }
-
 
 .links-header {
     display: flex;
