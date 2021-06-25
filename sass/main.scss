@@ -48,7 +48,7 @@ header {
     border-bottom: 1px solid $bg-color;
     padding-top: 24px;
     padding-bottom: 25px;
-    .container  {
+    &__container  {
         display: flex;
         align-items: center;
     }
@@ -347,10 +347,18 @@ a {
     &-footer-logo {
         margin-right: 70px;
     }
+}
 
-    &-nav {
+.nav {
+    display: flex;
+    align-items: center;    
+    
+    &__list {
         display: flex;
-        align-items: center;
+        align-content: center;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.17;
     }
 }
 
@@ -378,11 +386,7 @@ a {
 }
 
 .links-header {
-    display: flex;
-    align-content: center;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.17;
+
 
     .link {
         display: block;
