@@ -16,24 +16,24 @@
 </head>
 <body>
     <header class="header">
-        <div class="header__container" class="container">  
+        <div class="header__container container">  
             <nav class="nav">
                 <a  href="#" class="webstudio-logo-header">Web<span class="studio-logo-header">Studio</span></a>
                 <ul class="nav__list">                    
-                    <li class="nav__item"><a class="class="nav__link" class="nav__link--current" href="./index.html">Студия</a></li>
-                    <li class="nav__item"><a class="class="nav__link" href="./portfolio.html">Потрфолио</a></li>
-                    <li class="nav__item"><a class="class="nav__link" href="#">Контакты</a></li>
+                    <li class="nav__item"><a class="nav__link nav__link--current" href="./index.html">Студия</a></li>
+                    <li class="nav__item"><a class="nav__link" href="./portfolio.html">Потрфолио</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#">Контакты</a></li>
                 </ul>
             </nav>
             <ul class="contacts__list">
                 <li class="contacts__item">                    
-                    <a class="contacts__link" class="contacts__link--email" href="mailto:info@devstudio.com">
+                    <a class="contacts__link contacts__link--email" href="mailto:info@devstudio.com">
                     <svg class="contacts__icon" width="16" height="12"> 
                         <use href="./images/icons.svg#icon-envelope"></use> 
                     </svg> info@devstudio.com</a>      
                 </li>
                 <li class="contacts__item">                     
-                    <a class="contacts__link" class="contacts__link--tel" href="tel:+380961111111">
+                    <a class="contacts__link contacts__link--tel" href="tel:+380961111111">
                     <svg class="contacts__icon" width="10" height="16"> 
                         <use href="./images/icons.svg#icon-smartphone"></use> 
                     </svg> +38 096 111 11 11</a>
@@ -48,53 +48,53 @@
                 <button data-modal-open class="hero__button" >Заказать услугу</button>
                 <div class="backdrop is-hidden" data-modal>
                     <div class="modal">
-                        <button data-modal-close class="btn-vector" >
-                            <svg class="icon-vector" width="11" height="11"> 
+                        <button data-modal-close class="modal__button-close" >
+                            <svg class="modal__icon modal__icon--close" width="11" height="11"> 
                                 <use href="./images/icons.svg#icon-vector"></use>
                             </svg>
                         </button>
 
-                        <p class="data">Оставьте свои данные, мы вам перезвоним</p>
+                        <p class="modal__data">Оставьте свои данные, мы вам перезвоним</p>
 
-                        <form class="form">
+                        <form class="modal__form">
                             
-                            <div class="form-div">
-                                <label class="label-name" for="name"> <span class="span-form">Имя</span> </label>
-                                <input class="input-name" type="text" id="name"> 
-                                <svg class="icon-person" width="18" height="18"> 
+                            <div class="modal__div">
+                                <label class="modal__label modal__label--name" for="name"> <span class="span-form">Имя</span> </label>
+                                <input class="modal__input" type="text" id="name"> 
+                                <svg class="modal__icon" width="18" height="18"> 
                                     <use href="./images/icons.svg#icon-person"></use>
                                 </svg>
                             </div>
 
 
-                            <div class="form-div">
-                                <label class="label-tel" for="tel"> <span class="span-form">Телефон</span> </label>
-                                <input class="input-phone" type="text" id="tel">
-                                <svg class="icon-phone" width="18" height="18"> 
+                            <div class="modal__div">
+                                <label class="modal__label modal__label--tel" for="tel"> <span class="span-form">Телефон</span> </label>
+                                <input class="modal__input" type="text" id="tel">
+                                <svg class="modal__icon" width="18" height="18"> 
                                     <use href="./images/icons.svg#icon-phone"></use>
                                 </svg>
                             </div>
 
-                            <div class="form-div">
-                                <label class="label-mail" for="E-mail"> <span class="span-form">Почта</span>  </label>
-                                <input class="input-email" type="text" id="E-mail">
-                                <svg class="icon-email" width="18" height="18"> 
+                            <div class="modal__div">
+                                <label class="modal__label modal__label--email" for="E-mail"> <span class="span-form">Почта</span>  </label>
+                                <input class="modal__input" type="text" id="E-mail">
+                                <svg class="modal__icon" width="18" height="18"> 
                                     <use href="./images/icons.svg#icon-email"></use>
                                 </svg>
                             </div>
                             
-                            <div class="form-div">
-                                <label class="label-comment" for="comment"> <span class="span-form">Комментарий</span> </label>
-                                <input class="input-comment" type="text" id="comment" placeholder="Введите текст">
+                            <div class="modal__div">
+                                <label class="modal__label modal__label--comment" for="comment"> <span class="span-form">Комментарий</span> </label>
+                                <input class="modal__input modal__input--comment" type="text" id="comment" placeholder="Введите текст">
                             </div>
                             
-                            <div class="form-div-check">                           
-                                <label class="label-check"> 
-                                    <input class="checkbox" type="checkbox"/>
-                                    <span class="icon-check"></span> Соглашаюсь с рассылкой и принимаю <a class="contract" href="#">Условия договора</a>
+                            <div class="modal__div-check">                           
+                                <label class="modal__label modal__label--check"> 
+                                    <input class="modal__checkbox" type="checkbox"/>
+                                    <span class="modal__icon modal__icon--check"></span> Соглашаюсь с рассылкой и принимаю <a class="contract" href="#">Условия договора</a>
                                 </label>
                             </div> 
-                            <button class="form-btn" type="submit"> Отправить </button>
+                            <button class="modal__button modal__button--send" type="submit"> Отправить </button>
                         </form>
                     </div>
                 </div>
