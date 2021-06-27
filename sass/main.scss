@@ -82,8 +82,7 @@ img {
 
 .header {
     border-bottom: 1px solid $bg-color;
-    padding-top: 24px;
-    padding-bottom: 25px;
+
     &__container  {
         display: flex;
         align-items: center;
@@ -159,6 +158,9 @@ img {
         font-weight: 500;
         font-size: 14px;
         line-height: 1.17;
+        &--footer {
+            display:block;
+        }
         &--current {
             color: $hover-focus-color;
             transition: color $time $timing-function;
@@ -181,6 +183,13 @@ img {
         &:hover, &:focus {
             color: $hover-focus-color;
             transition: color $time $timing-function;
+        }
+        &--email--footer, &--tel--footer {
+            color: $contacts-footer-color; 
+            line-height: 1.17;
+        }
+        &--email--footer {
+            margin: 9px 0 9px 0;
         }
     }
     &__icon {
@@ -321,16 +330,28 @@ img {
                     transition: transform $time $timing-function;
                 }
             }
+            &--name:hover + .hero-modal__icon--name, &--name:focus + .hero-modal__icon--name {
+                fill: $hover-focus-color;
+                transition: transform $time $timing-function;            
+            }
+            &--tel:hover + .hero-modal__icon--tel, &--tel:focus + .hero-modal__icon--tel {
+                fill: $hover-focus-color;
+                transition: transform $time $timing-function;            
+            }
+            &--email:hover + .hero-modal__icon--email, &--email:focus + .hero-modal__icon--email {
+                fill: $hover-focus-color;
+                transition: transform $time $timing-function;            
+            }
             &:hover, &:focus {
                 cursor: pointer;
                 border-radius: 4px;
                 border: 1px solid $hover-focus-color;
                 transition: transform $time $timing-function;
-                &--name + .hero-modal__icon--name, &--tel + .hero-modal__icon--tel, &--email + .hero-modal__icon--email {
-                    fill: $hover-focus-color;
-                    transition: transform $time $timing-function;            
-                }
-            }   
+            }
+        }       
+        &__span-form {
+            display: block;
+            text-align: left;
         }
         &__icon {
             position: absolute;
@@ -363,11 +384,28 @@ img {
                 border-radius: 4px;
             }
         }
+        &__data{
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 1.172;
+            color: $color-data;
+            margin-bottom: 12px;
+        }
         &__checkbox { 
             -webkit-appearance: none;
             -moz-appearance: none;
             appearance: none;
             position: absolute;
+            &:hover + .hero-modal__icon--check, &:focus + .hero-modal__icon--check {
+                border-color: $hover-focus-color;
+            }
+            &:checked + .hero-modal__icon--check {
+                border-color: transparent;
+                background-color: $hover-focus-color;
+                background-image: url('../images/check.svg');
+                background-size: contain;
+                background-origin: border-box;
+            }
         }
         &__contract {
             color: var(--hover-focus-color);
@@ -387,12 +425,12 @@ img {
 
     opacity: 1;
     transition: opacity $time $timing-function, visibility $time $timing-function;
-}
 
-.backdrop.is-hidden {
-    opacity: 0;
-    pointer-events: none;
-    visibility: hidden;
+    &.is-hidden {
+        opacity: 0;
+        pointer-events: none;
+        visibility: hidden;
+    }   
 }
 
 .features {
@@ -447,7 +485,7 @@ img {
         font-size: 36px;
         line-height: 1.2;
         font-weight: 700;
-        color: var(--main-title-color); 
+        color: $main-title-color; 
         text-align: center;
         margin-bottom: 50px;
     }
@@ -526,7 +564,7 @@ img {
             margin-right: 30px;
         }
     }
-    &__div {
+    &-div {
         padding: 30px 32px;
         &__employee {
             text-align: center;
@@ -642,16 +680,9 @@ img {
         display: flex;
         align-items: baseline;
     }
-    &__logo {
+    &__info {
         margin-right: 70px;
-        &--link {
-            font-family: 'Raleway', sans-serif;
-            font-weight: 700;
-            font-size: 26px;
-            line-height: 1.2;
-            color: $hover-focus-color; 
-            margin: 0px;
-        }
+
     }
     &__address {
         font-family: inherit;
@@ -663,10 +694,27 @@ img {
     }
 }
 
-.studio-logo-footer {
-    color: $main-text-white-color;
-}
+.logo {
+    &__link {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.2;
+        color: $hover-focus-color; 
+        margin: 0px;
+        &--header {
+            margin-right: 93px;
+        }
+    }
+    &__span--footer {
+        color: $main-text-white-color;
+    }
+    &__span--header {
+        color: $studio-logo-color;
+    }
 
+}
+        
 .container-add {
     &__topic{
         text-transform: uppercase;
